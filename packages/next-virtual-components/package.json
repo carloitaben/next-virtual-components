@@ -1,0 +1,59 @@
+{
+  "name": "next-virtual-components",
+  "version": "0.1.0",
+  "author": {
+    "name": "Carlo Domínguez",
+    "email": "hello@carlo.works",
+    "url": "https://carlo.works"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "tsdown",
+    "test": "vitest",
+    "build": "tsdown"
+  },
+  "peerDependencies": {
+    "next": ">=14"
+  },
+  "dependencies": {
+    "@types/micromatch": "^4.0.9",
+    "chokidar": "^4.0.1",
+    "debug": "^4.3.7",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "micromatch": "^4.0.8",
+    "next": "15.3.3",
+    "prettier": "^3.3.3",
+    "ts-deepmerge": "^7.0.1",
+    "valibot": "^1.1.0",
+    "webpack-virtual-modules": "^0.6.2",
+    "zod": "^3.25.61"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/node": "^20",
+    "tsdoc-markdown": "^0.6.3",
+    "tsdown": "^0.12.7",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

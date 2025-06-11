@@ -1,0 +1,22 @@
+{
+  "include": ["**/*.ts"],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "lib": ["es2022"],
+    "module": "preserve",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}
